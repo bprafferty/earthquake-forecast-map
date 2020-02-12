@@ -1,0 +1,1 @@
+web: gunicorn geoQuakes.wsgi --log-file -
