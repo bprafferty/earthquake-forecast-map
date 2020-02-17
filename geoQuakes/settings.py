@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Quake',
         'USER': 'postgres',
-        'PASSWORD': "M0ch4b0y'95",
+        'PASSWORD': 'EMAIL_HOST_PASSWORD',
         'HOST': 'localhost',
         'PORT': 5432,
     }
