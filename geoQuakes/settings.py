@@ -21,12 +21,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('QUAKE_SECRET_KEY')
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+SECRET_KEY = 'g525-dzo86&#&e0wygz25g-@z#@!fdx^s^)uz3q(&(2p$6nnxu'
+#SECRET_KEY = os.environ.get('QUAKE_SECRET_KEY')
+#EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+#EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'earthquake-forecast.herokuapp.com']
 
@@ -138,10 +139,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 #location where django collect all static files
-STATIC_ROOT = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = 'staticfiles'
 
 # location where you will store your static files
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'quake/static')
-]
+STATICFILES_DIRS = (os.path.join(BASE_DIR,'static'), )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
